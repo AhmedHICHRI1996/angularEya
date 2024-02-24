@@ -1,0 +1,18 @@
+{
+  "departement": [
+    {
+      "id": "e13a",
+      "matricule": "eya",
+      "domaine": "info",
+      "nb_employer": 6,
+      "max_salaire": 500
+    },
+    {
+      "id": "991f",
+      "matricule": "youyo",
+      "domaine": "info",
+      "nb_employer": 55,
+      "max_salaire": 500
+    }
+  ]
+}

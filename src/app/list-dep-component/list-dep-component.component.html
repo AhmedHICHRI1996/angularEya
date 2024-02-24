@@ -1,0 +1,16 @@
+<label>Chercher Dep</label>
+<input type="number" [(ngModel)]="search"><br/>
+
+<div *ngFor="let d of dep">
+  <div *ngIf="d.max_salaire < search || search == 0">
+    {{d.matricule}}
+    {{d.domaine}}
+    {{d.nb_employer}}
+    {{d.max_salaire}}
+    <a routerLink="/update/{{d.id}}">mise à jour</a>
+    <button (click)="Delete(d.id)">Supprimer</button>
+  </div>
+  <br>
+</div>
+
+<input type="submit" value="Calculer" (click)="calcul()"> Nombre total d'employés : {{ Nb }}
